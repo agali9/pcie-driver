@@ -1,0 +1,40 @@
+# Kernel build artifacts
+*.ko
+*.o
+.*.cmd
+*.mod
+*.mod.c
+modules.order
+Module.symvers
+
+# Userspace build outputs
+*.so
+demo
+tests/test_edu_device
+
+# Python
+.pytest_cache/
+__pycache__/
+*.pyc
+
+# Backups
+*.bak
+*.bak.*
+
+# Vendored QEMU tree and local venv (use system qemu)
+/qemu/
+/qemu-venv/
+
+# Duplicate export stash
+/outputs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# local notes / tooling (not published)
+CLAUDE.md
+CLAUDE_BENCHMARK.md
+PCIE_context.md
+pcie_prototype_async/README.md
+/scripts/
